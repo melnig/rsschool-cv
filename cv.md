@@ -3,3 +3,7 @@
 ## I am currently learning JavaScript, HTML, and CSS.
 
 ## I am interested in web development and looking forward to becoming a professional front-end developer.
+
+## Contacts
+
+- **Email:** [ihormelnychenko7@gmail.com](mailto:ihormelnychenko7@gmail.com)
