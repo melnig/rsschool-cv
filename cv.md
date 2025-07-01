@@ -1,9 +1,32 @@
-# Hello! My name is Ihor. I am a student of the _JS/FE Pre-School at the RSSchool_.
+# Melnychenko Ihor
 
-## I am currently learning JavaScript, HTML, and CSS.
+<img src="https://i.postimg.cc/PrF0P09G/CV-image.png" alt="Alt text" width="200"/>
 
-## I am interested in web development and looking forward to becoming a professional front-end developer.
+## About Me
 
-## Contacts
+A web designer with little experience in frontend development.
 
-- **Email:** [ihormelnychenko7@gmail.com](mailto:ihormelnychenko7@gmail.com)
+## Contact Information
+
+- **Email:** ihormelnychenko7@gmail.com
+- **LinkedIn:** [linkedin.com/in/IhorMelnychenko](https://www.linkedin.com/in/ihor-melnychenko-947340356/)
+- **GitHub:** [github.com/melnig](https://github.com/melnig)
+- **Phone:** +3 (123) 123-4567
+
+## Skills
+
+- HTML5, CSS3, JS, Basic React
+- Basic REST API
+
+## Projects
+
+**Some projets will be here**
+
+## Sample Code
+
+```javascript
+// Simple function to multiply two numbers
+const multiply = (a, b) => a * b;
+
+console.log(multiply(5, 3)); // Output: 15
+```

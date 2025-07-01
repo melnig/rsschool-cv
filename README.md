@@ -1,1 +1,1 @@
-[rsschool-cv]: # "https://github.com/melnig/rsschool-cv"
+[rsschool-cv]: # "https://github.com/melnig/rsschool-cv/cv"
