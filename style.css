@@ -272,3 +272,35 @@ img {
 .figma {
   width: 80%;
 }
+
+/* Footer Styles */
+.footer {
+  background-color: var(--header-bg-color);
+  color: var(--header-text-color);
+  text-align: center;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.footer-gh {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer-gh img {
+  width: 24px;
+  height: 24px;
+}
+.footer-gh a {
+  color: var(--header-text-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+.footer-link img {
+  width: 124px;
+  height: auto;
+}
