@@ -18,6 +18,10 @@ body {
   color: var(--text-color);
   line-height: 1.6;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 .container {
   width: 100%;
   max-width: 1140px;
@@ -33,7 +37,7 @@ body {
   height: 100%;
 }
 .header {
-  background-color: var(--header-bg-color);
+  background-color: var(--bg-color);
   text-align: center;
   padding: 1rem 0;
 }
@@ -47,7 +51,7 @@ body {
   list-style: none;
 }
 .header-menu__link {
-  color: var(--header-text-color);
+  color: var(--header-bg-color);
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
@@ -60,10 +64,85 @@ body {
   height: 0.15rem;
   position: absolute;
   bottom: -8px;
-  background-color: var(--header-text-color);
+  background-color: var(--header-bg-color);
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
 .header-menu__link:hover::before {
   transform: scaleX(1);
+}
+
+.left {
+  background-color: var(--header-bg-color);
+  padding: 1rem;
+  color: var(--header-text-color);
+  border: 1px solid var(--header-bg-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: var(--header-text-color);
+}
+.left-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--header-text-color);
+}
+.left-name {
+  margin-bottom: 1rem;
+}
+.left h5 {
+  font-size: 1.2rem;
+}
+.left-name p,
+.left-address p,
+.left-date p,
+.left-place p,
+.left-gender p,
+.left-nation p,
+.left-status p,
+.left-docs p,
+.left-site p {
+  display: flex;
+  align-items: center;
+}
+.left svg {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+}
+.left-address,
+.left-contact,
+.left-date,
+.left-place,
+.left-gender,
+.left-nation,
+.left-status,
+.left-docs,
+.left-site {
+  margin-bottom: 1rem;
+}
+.left-address svg,
+.left-contact svg,
+.left-date svg,
+.left-place svg,
+.left-gender svg,
+.left-status svg,
+.left-docs svg,
+.left-site svg {
+  fill: var(--header-text-color);
+}
+.left-docs svg {
+  fill: var(--header-text-color);
+}
+.left-site a {
+  color: var(--header-text-color);
+  text-decoration: underline;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.rigth {
+  border: 1px solid var(--header-bg-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background: var(--header-text-color);
+  padding: 1rem;
 }
