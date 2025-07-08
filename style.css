@@ -125,7 +125,10 @@ img {
   color: var(--header-text-color);
   text-decoration: underline;
   font-weight: bold;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
+}
+.left-site a:hover {
+  text-decoration: none;
 }
 .left i {
   margin-right: 0.5rem;
@@ -186,6 +189,7 @@ img {
   padding: 1rem;
   border: 1px solid var(--header-bg-color);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 .work-place-name p {
   font-style: italic;
@@ -201,9 +205,58 @@ img {
   padding-left: 18px;
 }
 
+/* Projects Styles */
+.projects-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+}
+.project-item {
+  background-color: #fff;
+  border-radius:8px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-content {
+  padding: 20px;
+}
+
+.project-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 16px;
+  background-color: var(--header-bg-color);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.project-button:hover {
+  background-color: #0056b3;
+}
+
+
 .edu-place {
   margin-bottom: 1.5rem;
   padding: 1rem;
+  border-radius: 8px;
   border: 1px solid var(--header-bg-color);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -255,10 +308,10 @@ img {
 }
 
 .html {
-  width: 80%;
+  width: 90%;
 }
 .css {
-  width: 75%;
+  width: 85%;
 }
 .javascript {
   width: 60%;
@@ -303,4 +356,12 @@ img {
 .footer-link img {
   width: 124px;
   height: auto;
+}
+pre {
+  background-color: #f4f4f4;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+code {
+  font-family: "Courier New", Courier, monospace;
 }
