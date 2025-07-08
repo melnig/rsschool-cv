@@ -4,23 +4,208 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Melnychenko CV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <h2>CV Header</h2>
-      </div>
-    </header>
-    <main class="main">
-      <div class="container">
-        <h2>CV Main Info</h2>
-      </div>
-    </main>
-    <footer class="footer">
-      <div class="container">
-        <h2>CV Footer</h2>
-      </div>
-    </footer>
+    <div class="container wrapper">
+      <header class="header">
+        <nav class="header-nav">
+          <ul class="header-menu">
+            <li class="header-menu__item"><a href="#about" class="header-menu__link">About</a></li>
+            <li class="header-menu__item"><a href="#work" class="header-menu__link">Work</a></li>
+            <li class="header-menu__item"><a href="#education" class="header-menu__link">Education</a></li>
+            <li class="header-menu__item"><a href="#skills" class="header-menu__link">Skills</a></li>
+            <li class="header-menu__item"><a href="#footer" class="header-menu__link">Contacts</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main">
+        <div class="left">
+          <div class="cv-img">
+            <img src="./CV-image.png" alt="CV-image">
+          </div>
+          <h2 class="left-title">Personal</h2>
+          <div class="left-name">
+            <h5><i class="fa-solid fa-user"></i>Name</h5>
+            <p>Ihor Melnychenko</p>
+          </div>
+          <div class="left-address">
+            <h5><i class="fa-solid fa-location-dot"></i>Address</h5>
+            <p>01001 Kyiv, Ukraine</p>
+          </div>
+          <div class="left-contact">
+            <h5><i class="fa-solid fa-mobile-screen"></i>Phone</h5>
+            <p>+38-093-123-45-67</p>
+            <h5><i class="fa-solid fa-envelope"></i>Email</h5>
+            <p>ihormelnychenko7@gmail.com</p>
+          </div>
+          <div class="left-date">
+            <h5><i class="fa-solid fa-calendar-days"></i>Date of birth</h5>
+            <p>02-06-1990</p>
+          </div>
+          <div class="left-place">
+            <h5><i class="fa-solid fa-map-location-dot"></i>Place of birth</h5>
+            <p>Potsdam, Germany</p>
+          </div>
+          <div class="left-gender">
+            <h5><i class="fa-solid fa-mars"></i>Gender</h5>
+            <p>Male</p>
+          </div>
+          <div class="left-nation">
+            <h5><i class="fa-solid fa-users"></i>Nationality</h5>
+            <p>Ukrainian <img src="./ukraine.svg" alt="ukraine"></p>
+          </div>
+          <div class="left-status">
+            <h5><i class="fa-solid fa-ring"></i>Marital status</h5>
+            <p>Married</p>
+          </div>
+          <div class="left-docs">
+            <h5><i class="fa-solid fa-address-card"></i>Driving license</h5>
+            <p>B</p>
+          </div>
+          <div class="left-site">
+            <h5><i class="fa-solid fa-window-maximize"></i>WebSite</h5>
+            <p><a href="https://melnig.github.io/my-portfolio-spa/">Portpholio</a></p>
+          </div>
+          <h2 class="left-interests">Interests</h2>
+          <p>Voleyball, Music, Guitar</p>
+        </div>
+        <div class="right">
+          <h1 class="right-title">
+            Ihor Melnychenko
+          </h1>
+          <section class="right-about" id="about">
+            <h2 class="section-title">About</h2>
+            <p class="about-descr">Junior Frontend Developer with hands-on experience in building responsive, user-friendly web 
+              interfaces using HTML, CSS, and JavaScript and ReactJS. Developed multiple real-world projects, 
+              including a sustainability blog and client websites, demonstrating strong skills in layout, 
+              performance optimization, and UI/UX fundamentals. Familiar with modern frontend tools and 
+              practices such as Git, REST APIs, and Agile collaboration. Fast learner with a proactive attitude and 
+              passion for clean, accessible code.
+            </p>
+          </section>
+          <section class="right-work" id="work">
+            <h2 class="section-title">Work experience</h2>
+            <div class="work-place">
+              <div class="work-place-top">
+                <div class="work-place-name">
+                  <h3>Course Developer</h3>
+                  <p>Technomatix, Kyiv</p>
+                </div>
+                <div class="work-place-period">
+                  <p>Jun 2018 - Aug 2021</p>
+                </div>
+              </div>
+              <ul class="work-place-list">
+                <li class="work-place-item">Development of interactive electronic training courses.</li>
+                <li class="work-place-item">Layout of educational materials (HTML, CSS, JavaScript, Articulate Storyline, Lectora).</li>
+                <li class="work-place-item">Integration of multimedia content (videos, animations, tests).</li>
+                <li class="work-place-item">Cooperation with designers and methodologists to create quality content. </li>
+              </ul>
+            </div>
+            <div class="work-place">
+              <div class="work-place-top">
+                <div class="work-place-name">
+                  <h3>Junior Web Developer</h3>
+                  <p>Technomatix (Moco), Kyiv</p>
+                </div>
+                <div class="work-place-period">
+                  <p>Aug 2021 - Feb 2022</p>
+                </div>
+              </div>
+              <ul class="work-place-list">
+                <li class="work-place-item">Development and support of the LMS platform for managing educational content.</li>
+                <li class="work-place-item">Layout and optimization of the platform interface (HTML, CSS, JavaScript).</li>
+                <li class="work-place-item">Scorm/xAPI integration to support e-learning standards.</li>
+                <li class="work-place-item">Optimizing platform performance, improving download speed.</li>
+              </ul>
+            </div>
+          </section>
+          <section class="right-education" id="education">
+            <h2 class="section-title">Education and Qualifications</h2>
+            <div class="edu-place">
+              <div class="edu-top">
+                <div class="edu-top__name">
+                  <h3>Bachelor of Math</h3>
+                  <p>NSU named after M. Gogol, Nizhyn</p>
+                </div>
+                <p>Sep 2007 - Jul 2012</p>
+              </div>
+              <p class="edu-descr">Faculty of Physics and Mathematics, teacher of mathematics and economics.</p>
+            </div>
+            <div class="edu-place">
+              <div class="edu-top">
+                <div class="edu-top__name">
+                  <h3>Frontend Development</h3>
+                  <p>Coursera, Kyiv</p>
+                </div>
+                <p>Jul 2018 - Oct 2018</p>
+              </div>
+              <p class="edu-descr">Frontend Development.</p>
+            </div>
+          </section>
+          <section class="right-skills" id="skills">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-wrapper">
+              <div class="skills skill skill-1">
+                <div class="skill-descr">
+                  <img src="./html.svg" alt="skill img">
+                  <h3 class="skill-title">HTML</h3>
+                </div>
+                <div class="skill-bar"><div class="skill-bar-fill html"></div></div>
+              </div>
+              <div class="skills skill skill-2">
+                <div class="skill-descr">
+                  <img src="./css.svg" alt="skill img">
+                  <h3 class="skill-title">CSS</h3>
+                </div>
+                <div class="skill-bar"><div class="skill-bar-fill css"></div></div>
+              </div>
+              <div class="skills skill skill-3">
+                <div class="skill-descr">
+                  <img src="./js.svg" alt="skill img">
+                  <h3 class="skill-title">JavaScript</h3>
+                </div>
+                <div class="skill-bar"><div class="skill-bar-fill javascript"></div></div>
+              </div>
+              <div class="skills skill skill-4">
+                <div class="skill-descr">
+                  <img src="./react.svg" alt="skill img">
+                  <h3 class="skill-title">React</h3>
+                </div>
+                <div class="skill-bar"><div class="skill-bar-fill react"></div></div>
+              </div>
+              <div class="skills skill skill-5">
+                <div class="skill-descr">
+                  <img src="./figma.svg" alt="skill img">
+                  <h3 class="skill-title">Figma</h3>
+                </div>
+                <div class="skill-bar"><div class="skill-bar-fill figma"></div></div>
+              </div>
+              <div class="skills skill skill-6">
+                <div class="skill-descr">
+                  <img src="./github.svg" alt="skill img">
+                  <h3 class="skill-title">Github</h3>
+                </div>
+                <div class="skill-bar"><div class="skill-bar-fill css"></div></div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer id="footer" class="footer"> 
+        <div class="footer-col footer-gh">
+          <img src="./github.svg" alt="github"><a href="https://github.com/melnig" target="_blank">Ihor Melnychenko</a>
+        </div>
+        <div class="footer-col">Created at 2025</div>
+        <div class="footer-col footer-link">
+          <a href="https://rs.school/courses/javascript-preschool-ru" target="_blank">
+            <img src="./rs-school-logo.svg" alt="rs-logo">
+          </a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
