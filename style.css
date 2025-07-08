@@ -1,3 +1,4 @@
+/* Global Styles */
 :root {
   --bg-color: #fffaf3;
   --text-color: #2c2c2c;
@@ -36,6 +37,8 @@ img {
   grid-template-columns: 300px 1fr;
   height: 100%;
 }
+
+/* Header Styles */
 .header {
   background-color: var(--bg-color);
   text-align: center;
@@ -72,15 +75,17 @@ img {
   transform: scaleX(1);
 }
 
+/* Main Content Styles Left */
 .left {
   background-color: var(--header-bg-color);
-  padding: 1rem;
+  padding: 1rem 1rem 5rem;
   color: var(--header-text-color);
   border: 1px solid var(--header-bg-color);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   color: var(--header-text-color);
 }
-.left-title {
+.left-title,
+.left-interests {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   border-bottom: 1px solid var(--header-text-color);
@@ -103,12 +108,7 @@ img {
   display: flex;
   align-items: center;
 }
-.left svg {
-  width: 24px;
-  height: 24px;
-  vertical-align: middle;
-  margin-left: 0.5rem;
-}
+
 .left-address,
 .left-contact,
 .left-date,
@@ -120,29 +120,155 @@ img {
 .left-site {
   margin-bottom: 1rem;
 }
-.left-address svg,
-.left-contact svg,
-.left-date svg,
-.left-place svg,
-.left-gender svg,
-.left-status svg,
-.left-docs svg,
-.left-site svg {
-  fill: var(--header-text-color);
-}
-.left-docs svg {
-  fill: var(--header-text-color);
-}
+
 .left-site a {
   color: var(--header-text-color);
   text-decoration: underline;
   font-weight: bold;
   transition: color 0.3s ease;
 }
+.left i {
+  margin-right: 0.5rem;
+  color: var(--header-text-color);
+}
+.left-nation img {
+  width: 20px;
+  height: 20px;
+  margin-left: 0.5rem;
+}
+.left-interests {
+  margin-top: 2rem;
+}
 
-.rigth {
+/* Main Content Styles Right */
+.right {
   border: 1px solid var(--header-bg-color);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   background: var(--header-text-color);
+  padding: 2rem;
+}
+.right-title {
+  font-size: 2rem;
+  color: var(--header-bg-color);
+  margin-bottom: 2rem;
+  position: relative;
+}
+.right-title:before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -20px;
+  width: 100%;
+  height: 1px;
+  background-color: var(--header-bg-color);
+  margin-bottom: 1rem;
+}
+.right section {
+  margin-bottom: 2rem;
+}
+.right .section-title {
+  font-size: 1.5rem;
+  color: var(--header-bg-color);
+  margin-bottom: 1rem;
+  position: relative;
+}
+.right .section-title:before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -5px;
+  width: 100px;
+  height: 1px;
+  background-color: var(--header-bg-color);
+}
+.work-place {
+  margin-bottom: 1.5rem;
   padding: 1rem;
+  border: 1px solid var(--header-bg-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.work-place-name p {
+  font-style: italic;
+  line-height: 1.4;
+}
+.work-place-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.work-place-list {
+  padding-left: 18px;
+}
+
+.edu-place {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border: 1px solid var(--header-bg-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.edu-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.edu-top__name p {
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.skills.skill {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.skills .skill-descr,
+.skills .skills-range {
+  width: 50%;
+}
+.skills .skill-descr {
+  display: flex;
+  align-items: center;
+}
+.skills .skill-descr img {
+  margin-right: 0.5rem;
+  color: var(--header-bg-color);
+}
+.skill-bar {
+  flex: 1;
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.skill-descr img {
+  width: 28px;
+  height: 28px;
+  margin-right: 0.5rem;
+}
+
+.skill-bar-fill {
+  height: 100%;
+  background-color: #374151;
+  border-radius: 5px 0 0 5px;
+}
+
+.html {
+  width: 80%;
+}
+.css {
+  width: 75%;
+}
+.javascript {
+  width: 60%;
+}
+.react {
+  width: 40%;
+}
+.github {
+  width: 70%;
+}
+.figma {
+  width: 80%;
 }
