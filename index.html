@@ -12,6 +12,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
    >
+   <link type="image/png" sizes="32x32" rel="icon" href="./favicon.png">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -293,9 +294,20 @@
             <h2 class="section-title">Code example</h2>
             <pre>
               <code>
-// Simple function to multiply two numbers
-const multiply = (a, b) => a * b;
-console.log(multiply(5, 3)); // Output: 15
+// Vowel count
+function getCount(str) {
+  let arr = ['a', 'e', 'i', 'o', 'u'];
+    let result = 0;
+    let arrStr = str.split('');
+    arrStr.forEach((element) => {
+      if (arr.includes(element)) {
+        result += 1;
+      }
+    });
+  return result;
+}
+
+getCount("abracadabra"), 5
               </code>
             </pre>
           </section>
