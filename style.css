@@ -365,3 +365,24 @@ pre {
 code {
   font-family: "Courier New", Courier, monospace;
 }
+
+.right-cv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.cta-button {
+  background: var(--header-bg-color);
+  border-radius: 5px;
+  color: #fff;
+  margin-top: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.cta-button:hover {
+  background: #0056b3;
+  color: #fff;
+}
