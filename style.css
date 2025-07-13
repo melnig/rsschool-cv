@@ -117,7 +117,8 @@ img {
 .left-nation,
 .left-status,
 .left-docs,
-.left-site {
+.left-site,
+.left-languages {
   margin-bottom: 1rem;
 }
 
@@ -188,7 +189,7 @@ img {
   margin-bottom: 1.5rem;
   padding: 1rem;
   border: 1px solid var(--header-bg-color);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
 }
 .work-place-name p {
@@ -215,7 +216,7 @@ img {
 }
 .project-item {
   background-color: #fff;
-  border-radius:8px;
+  border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
@@ -252,13 +253,12 @@ img {
   background-color: #0056b3;
 }
 
-
 .edu-place {
   margin-bottom: 1.5rem;
   padding: 1rem;
   border-radius: 8px;
   border: 1px solid var(--header-bg-color);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 .edu-top {
   display: flex;
